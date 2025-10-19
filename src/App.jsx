@@ -1,34 +1,64 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import MissionVision from './components/MissionVision'
+import Products from './components/Products'
+import Facilities from './components/Facilities'
+import QualityControl from './components/QualityControl'
+import Projects from './components/Projects'
+import Laboratory from './components/Laboratory'
+import WhyChooseUs from './components/WhyChooseUs'
+import Contact from './components/Contact'
+import Units from './components/Units'
+import Customers from './components/Customers'
+import QCICertificate from './components/QCICertificate'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    // Main container with overflow control
+    <div className="min-h-screen bg-white overflow-x-hidden">
+      {/* Content wrapper */}
+      <div className="relative">
+        {/* Navigation Component */}
+        <Navbar />
+        
+        <main className="relative">
+          {/* Hero Section - Landing page main banner */}
+          <Hero />
+
+        {/* Company Information Sections */}
+        <About />
+        <MissionVision />
+        
+        {/* Product and Services Sections */}
+        <Products />
+        <Facilities />
+        <QualityControl />
+        
+        {/* Portfolio and Expertise Sections */}
+        <Projects />
+        <Laboratory />
+        <WhyChooseUs />
+        
+        {/* Manufacturing Units Section */}
+        <Units />
+        
+        {/* Customers Section */}
+        <Customers />
+        
+        {/* QCI Certificate Section */}
+        <QCICertificate />
+        
+        {/* Contact Information Section */}
+        <Contact />
+      </main>
+
+      {/* Footer Section */}
+      <Footer />
+    </div>
+    </div>
   )
 }
 
