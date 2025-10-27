@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img src={logo} alt="Communique Concrete" className="h-17 w-auto object-contain" />
+               <a href="#"><img src={logo} alt="Communique Concrete" className="h-17 w-auto object-contain" /></a>
               </div>
             </div>
           
