@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import logo from '../assets/logo.jpg'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+  const logo = "/logo.jpg";
   const navLinks = [
     { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },

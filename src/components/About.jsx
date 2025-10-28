@@ -1,33 +1,45 @@
 const teamMembers = [
   {
     name: 'Sandip Mukherjee',
+    image: '/images/team/sandip.jpg',
     position: 'Managing Director',
     description: 'An accomplished business leader with 26 years of experience in business development planning and enhancing strategies.',
   },
   {
     name: 'Subhra Sarkar',
+    image: '/images/team/subhra.jpg',
     position: 'GM – Business Head',
     description: 'A civil engineer with 19 years of experience in the ready mix industry, starting his career with L&T concrete in Kolkata.',
   },
   {
     name: 'Gauranga Paul',
+    image: '/images/team/gauranga.jpg',
     position: 'DGM – Operation',
     description: 'A mechanical engineer with 26 years of experience in construction and ready mix industry, specializing in plant & machinery operations.',
   },
   {
     name: 'Soumik Rakshit',
+    image: '/images/team/soumik.jpg',
     position: 'Sr. Manager - Business',
     description: '12 years of experience in readymix concrete business, former Cluster Business Head at firstchoice readymix.',
   },
   {
     name: 'Tamal Roy',
+    image: '/images/team/tamal.jpg',
     position: 'Sr. Manager - Business',
     description: '9 years of experience in readymix concrete business, former Cluster Business Head of Joka & Kharagpur plants.',
   },
   {
     name: 'Shubhankar Ghosh',
+    image: '/images/team/shubhankar.jpg',
     position: 'Sr. Manager - Business',
     description: '14 years of experience in readymix concrete business, former Cluster Business Head of Khardah & Dankuni plants.',
+  },
+  {
+    name: 'Payel Banerjee',
+    image: '/images/team/payel.jpg',
+    position: 'Sr. Manager - HRD',
+    description: 'She started her career in Tantia Construction Limited (RMC Division) in 2010. Having more than 14 years of experience in readymix concrete business. She joined firstchoice readymix in 2019. She has worked as the HR Manager in eastern region at firstchoice readymix till August’2024.',
   },
 ]
 
@@ -67,7 +79,7 @@ const About = () => {
         >
           <motion.div variants={itemVariants} className="relative">
             <img
-              src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80"
+              src="/images/about/image.png"
               alt="About Communique Concrete"
               className="rounded-lg shadow-2xl w-full h-[500px] object-cover"
             />
@@ -112,8 +124,8 @@ const About = () => {
               >
                 <div className="text-center">
                   <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
-                    <span className="text-2xl text-white font-bold">
-                      {member.name.split(' ').map(n => n[0]).join('')}
+                    <span className="text-2xl text-white font-bold rounded-full">
+                      <img src={member.image} alt={member.name} className="w-full h-full rounded-full" />
                     </span>
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h4>

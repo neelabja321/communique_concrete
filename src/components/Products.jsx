@@ -55,7 +55,9 @@ const Products = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">{product.category}</h3>
               </div>
+              
               <ul className="grid gap-3 md:grid-cols-2">
+                
                 {product.items.map((item, itemIndex) => (
                   <li 
                     key={itemIndex} 
@@ -68,8 +70,12 @@ const Products = () => {
                   </li>
                 ))}
               </ul>
+              
             </motion.div>
+            
           ))}
+          
+
         </div>
       </div>
     </section>
