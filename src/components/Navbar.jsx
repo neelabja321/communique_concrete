@@ -6,13 +6,14 @@ const Navbar = () => {
 
   const logo = "/logo.jpg";
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#about' },
-    { name: 'Products', href: '#products' },
-    { name: 'Facilities', href: '#facilities' },
-    { name: 'Quality', href: '#quality' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#' },
+    { name: 'About', href: '/#about' },
+    { name: 'Products', href: '/#products' },
+    { name: 'Facilities', href: '/#facilities' },
+    { name: 'Quality', href: '/#quality' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Contact', href: '/#contact' },
+    { name: 'Gallery', href: '/gallery' },
   ]
 
   return (

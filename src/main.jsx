@@ -3,8 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { Helmet } from 'react-helmet'
 import './index.css'
 import App from './App.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
   <StrictMode>
     <Helmet>
       <title>Communique Concrete - Quality Readymix Concrete Solutions</title>
@@ -16,5 +18,6 @@ createRoot(document.getElementById('root')).render(
       <link rel="canonical" href="https://communiqueconcrete.com" />
     </Helmet>
     <App />
-  </StrictMode>,
+  </StrictMode>
+  </BrowserRouter>,
 )

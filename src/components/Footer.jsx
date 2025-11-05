@@ -6,14 +6,15 @@ const Footer = () => {
   const car = "/cementcar.png";
   const links = {
     company: [
-      { name: 'About', href: '#about' },
-      { name: 'Products', href: '#products' },
-      { name: 'Projects', href: '#projects' },
-      { name: 'Contact', href: '#contact' }
+      { name: 'About', href: '/#about' },
+      { name: 'Products', href: '/#products' },
+      { name: 'Projects', href: '/#projects' },
+      { name: 'Contact', href: '/#contact' },
+      { name: 'Gallery', href: '/gallery' }
     ],
     legal: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' }
+      { name: 'Privacy Policy', href: '/privacy-policy' },
+      { name: 'Terms of Service', href: '/terms-and-conditions' }
     ],
     social: [
       { name: 'Facebook', href: 'https://www.facebook.com/p/Communique-Concrete-61561051752198', icon: 'facebook' },
@@ -77,7 +78,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm text-center">
               © {currentYear} Communique Concrete. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
